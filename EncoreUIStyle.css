@@ -18,19 +18,5 @@ a:focus {
     display: flex;
     border-bottom: 9px solid #4480c1;
 
-    li {
-        flex: 0 0 auto;
-        font-size: 14px;
-    }
-
-    a {
-        display: block;
-        background: #3f6085;
-        color: #ccc;
-        padding: 10px 20px;
-
-        .subdued {
-            color: darken(@subduedText, 15%);
-        }
-      }
+   
     }
