@@ -32,41 +32,5 @@ a:focus {
         .subdued {
             color: darken(@subduedText, 15%);
         }
-
-        &:hover:not(.active),
-        &:focus:not(.active) {
-            cursor: pointer;
-            color: #ffff;
-            text-decoration: none;
-
-            .subdued {
-                color: #bbb;
-            }
-        }
+      }
     }
-
-    .active a {
-        background: #4480c1;
-        color: #ffff;
-
-        .subdued {
-            color: #bbb;
-        }
-    }
-}
-
-.tab-pane {
-    clear: both;
-    display: none;
-    background: #ffff;
-    padding: 10px;
-
-    &.active {
-        display: block;
-    }
-
-    // If the title is the first part of the tab-pane, remove its top border so there isn't so much space
-    .title:first-child {
-        margin-top: 0;
-    }
-}
