@@ -1,17 +1,72 @@
-
-    p {
-      
+p {
       font-family: "Roboto", "sans-serif";
-    
-    }
-    
-  a {
-     text-decoration: none;
-     color: #4682c2;
   }
-  a:hover,
-  a:focus {
+    
+a {
+  text-decoration: none;
+  color: #4682c2;
+    
+}
+
+a:hover,
+a:focus {
     text-decoration: underline;
     color: saturate(#4682c2, 15%);
-  }
+}
 
+.nav-tabs {
+    display: flex;
+    border-bottom: 9px solid #4480c1;
+
+    li {
+        flex: 0 0 auto;
+        font-size: 14px;
+    }
+
+    a {
+        display: block;
+        background: #3f6085;
+        color: #ccc;
+        padding: 10px 20px;
+
+        .subdued {
+            color: darken(@subduedText, 15%);
+        }
+
+        &:hover:not(.active),
+        &:focus:not(.active) {
+            cursor: pointer;
+            color: #ffff;
+            text-decoration: none;
+
+            .subdued {
+                color: #bbb;
+            }
+        }
+    }
+
+    .active a {
+        background: #4480c1;
+        color: #ffff;
+
+        .subdued {
+            color: #bbb;
+        }
+    }
+}
+
+.tab-pane {
+    clear: both;
+    display: none;
+    background: #ffff;
+    padding: 10px;
+
+    &.active {
+        display: block;
+    }
+
+    // If the title is the first part of the tab-pane, remove its top border so there isn't so much space
+    .title:first-child {
+        margin-top: 0;
+    }
+}
