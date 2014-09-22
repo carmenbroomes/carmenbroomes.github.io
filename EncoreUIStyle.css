@@ -13,12 +13,6 @@ a:focus {
     text-decoration: underline;
     color: saturate(#4682c2, 15%);
 }
-
-/*----- Tabs -----*/
-.tabs {
-    width:100%;
-    display:inline-block;
-}
  
 	
 /*----- Tabs -----*/
